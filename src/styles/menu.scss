@@ -16,20 +16,10 @@ section#menu {
         justify-content: center;
         align-items: center;
         height: 100%;
-
-        // .pic-up-left {
-        //     width: 50%;
-        //     height: 100%;
-        //     margin: 1em auto;
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     padding: 2em;
-
+        
             .gatsby-image-wrapper {
                 height: 65vh;
-                // width: 100%;
-                // padding: 1em;
+
                 margin: 2em auto;
                 box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.75);
 
@@ -42,8 +32,6 @@ section#menu {
                 }
 
                 picture {
-                    // height: 100%;
-                    // order: 0;
                     img {
                         width: auto!important;
                         position: static!important;
@@ -52,7 +40,7 @@ section#menu {
                     }
                 }
             }
-        // }
+
 
     }
 }

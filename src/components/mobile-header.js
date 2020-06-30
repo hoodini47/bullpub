@@ -30,7 +30,7 @@ const MobileHeader = (props) => {
         </li>
         <li>
           <a onClick={() => {
-                            document.getElementById('goorderButton').click();
+                            props.scrollTo('#about');
                             props.setNavState(false)
                             }
                           }
