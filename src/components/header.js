@@ -11,16 +11,16 @@ const Header = (props) => {
 
   query MyNavQuery {
     LangPL: datoCmsNavMobile(locale: {eq: "pl"}) {
-      order
       home
+      about
       menu
       location
       terms
     }
 
     LangEN: datoCmsNavMobile(locale: {eq: "en"}) {
-      order
       home
+      about
       menu
       location
       terms

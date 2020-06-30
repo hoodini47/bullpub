@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import "./typography";
+
+
+section#about {
+    background-color: #ededed;
+    padding: 50px 0 0;
+
+    .about-header {
+        margin: 25px auto 60px auto;
+    }
+
+    .about-pair-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        box-shadow: 0px 0px 67px -25px rgba(0,0,0,1);
+
+        // .pic-up-left {
+        //     width: 50%;
+        //     height: 100%;
+        //     margin: 1em auto;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     padding: 2em;
+
+            .gatsby-image-wrapper {
+                height: 125vh;
+                // width: 100%;
+                // padding: 1em;
+
+                div {
+                    padding-bottom:none!important;
+                }
+
+                picture {
+                    // height: 100%;
+                    // order: 0;
+                    img {
+                        position: static!important;
+                        margin-bottom: 0em;
+                        box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.75);
+                    }
+                }
+            }
+        // }
+
+        .text-up-right {
+            font-family: 'Cinzel', serif;
+            position: absolute;
+            width: 20em;
+            height: 20em;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            line-height: 2;
+            background-color: rgba(38, 62, 64, 0.4);
+
+            p {
+                vertical-align: center;
+                margin: auto;
+                padding: 2em;
+                text-align: center;
+                font-weight: 700;
+                @include fluid-type($min_width, $max_width, 12px, 16px);
+            }
+        }
+
+    }
+}
+
+
+.text-up-right:first-of-type {
+    bottom: 20%;
+    right: 10%;
+   }
+
+// &:nth-of-type(even) {
+//     bottom: 3em;
+//     right: 1em;
+//    }
+
+//    &:nth-of-type(odd) {
+//     bottom: 3em;
+//     left: 1em;
+//    }
+
+//    &:first-of-type {
+//     bottom: 50%;
+//     right: 50%;
+//    }

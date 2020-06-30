@@ -6,7 +6,7 @@
         justify-content: center;
         flex-flow: column;
         padding: 0.5em;
-        font-family: "Source Sans Pro",sans-serif;
+       font-family: 'Montserrat', sans-serif;
 
      h2 {
          margin-bottom: 1em;
@@ -19,7 +19,7 @@
 
       .days-hours {
         display: flex;
-        padding: 0em 2em 0em 2em;
+        padding: 0em 1em 0em 1em;
 
         p {
           text-align: left;
@@ -44,6 +44,16 @@
         font-size: 120%;
         margin-top: 2em;
         margin-bottom: 2em;
+    }
+
+    p.contact-slogan {
+      text-align: center;
+      font-size: 120%;
+    }
+
+    p.contact-number {
+      text-align: center;
+      font-size: 120%;
     }
 
   }

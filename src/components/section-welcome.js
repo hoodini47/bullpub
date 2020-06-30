@@ -12,7 +12,7 @@ export const SectionWelcome = () => {
   query MyQuery {
     file(relativePath: {eq: "main-photo-optimized.jpg"}) {
       childImageSharp {
-        fluid(quality: 100, maxWidth: 3080) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -23,11 +23,8 @@ export const SectionWelcome = () => {
 
  return (
   <section id={`welcome`} className={`first-section`}>
-    <Img fluid={data.file.childImageSharp.fluid} />
-    <div className={`bbg-logo`}>
-      <BbgSvgLogo />
-    </div>
-    <div className={`scroll-icon`} onClick={() => scrollTo('#menu')}>
+    <Img fluid={data.file.childImageSharp.fluid}/>
+    <div className={`scroll-icon`} onClick={() => scrollTo('.about-content-container')}>
       <span className={`arrow-container`}><ArrowLogo /></span>
     </div>
   </section>

@@ -1,6 +1,8 @@
-    h4 {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+   
+   h4 {
     margin: auto;
-    font-family: "Source Sans Pro",sans-serif;
+   font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: #a6a6a6;
     padding: 0;
@@ -32,7 +34,7 @@
 
     h2 {
     margin: 27px auto;
-    font-family: "Playfair Display",serif;
+    font-family: 'Cinzel', serif;
     font-style: italic;
     font-weight: 400;
     font-size: 300%;
@@ -99,3 +101,4 @@
       .ReactModal__Overlay {
         background: none!important;
       }
+      

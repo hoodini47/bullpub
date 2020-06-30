@@ -7,14 +7,20 @@
   height: 8vh!important;
   border-bottom: 2px solid #ededed;
 
-  #bbg-mini-logo {
+  .gatsby-image-wrapper {
+    width: 150px!important;
+    height: 100%!important;
+  }
+
+  .gatsby-image-wrapper picture img {
     display: block!important;
-    height: 80%!important;
-    width: 12vw!important;
-    margin-top: 0.5em;
+    height: 100% !important;
+    width: auto !important;
     padding: 0.5em;
-    align-items: center;
     cursor: pointer;
+    margin: auto;
+    position: static!important;
+    align-self: center;
   }
 
   .desktop-main-nav {
@@ -64,7 +70,7 @@
   z-index: 1;
   font-size: 90%;
 
-  #bbg-mini-logo {
+  .gatsby-image-wrapper img {
     display: none;
   }
 
@@ -75,12 +81,12 @@
 
     ul#nav-items-list {
       display: flex;
-      font-family: "Source Sans Pro",sans-serif;
+      font-family: 'Montserrat', sans-serif;
       font-size: 100%;
       font-weight: 700;
       color: white;
       text-transform: uppercase;
-      margin-left: 3em;
+      margin-left: 0em;
 
       li {
         margin: auto;
@@ -141,7 +147,7 @@
       margin: 0 2vw 0 0;
       display: flex;
       flex-flow: row;
-      font-family: "Source Sans Pro",sans-serif;
+     font-family: 'Montserrat', sans-serif;
       font-size: 110%;
       font-weight: 700;
       color: white;
@@ -217,7 +223,7 @@
   margin: 0 2vw 0 0;
   display: flex;
   flex-flow: row;
-  font-family: "Source Sans Pro",sans-serif;
+ font-family: 'Montserrat', sans-serif;
   font-size: 110%;
   font-weight: 700;
   color: white;

@@ -5,7 +5,6 @@ import { FaFacebook } from 'react-icons/fa';
 import HamburgerButton from "./hamburger-button"
 // import TripAdvisorLogo from "../images/tripadvisor.inline.svg"
 import { navigate } from '@reach/router';
-import OrderButtonModal from "./order-button-modal"
 
 
 const MobileHeader = (props) => {
@@ -19,16 +18,6 @@ const MobileHeader = (props) => {
   <nav className={`nav-mobile`}>
 
     <ul id="nav-items-list">
-          <li>
-          <a onClick={() => {
-                            document.getElementById('goorderButton').click();
-                            props.setNavState(false)
-                            }
-                          }
-                          className={`${props.langChosen ? "english" : "polish"}`}
-                          >
-                            {props.langChosen ? props.data.LangEN.order : props.data.LangPL.order}</a>
-        </li>
         <li>
           <a onClick={() => {
                             props.scrollTo('#welcome');
@@ -38,6 +27,16 @@ const MobileHeader = (props) => {
                           className={`${props.langChosen ? "english" : "polish"}`}
                           >
                             {props.langChosen ? props.data.LangEN.home : props.data.LangPL.home}</a>
+        </li>
+        <li>
+          <a onClick={() => {
+                            document.getElementById('goorderButton').click();
+                            props.setNavState(false)
+                            }
+                          }
+                          className={`${props.langChosen ? "english" : "polish"}`}
+                          >
+                            {props.langChosen ? props.data.LangEN.about : props.data.LangPL.about}</a>
         </li>
         <li>
           <a onClick={() => {
@@ -59,7 +58,7 @@ const MobileHeader = (props) => {
                           >
                             {props.langChosen ? props.data.LangEN.location : props.data.LangPL.location}</a>
         </li>
-        <li>
+        {/* <li>
           <a onClick={() => {
                             navigate('/terms');
                             props.setNavState(false)
@@ -68,7 +67,7 @@ const MobileHeader = (props) => {
                           className={`${props.langChosen ? "english" : "polish"}`}
                           >
                             {props.langChosen ? props.data.LangEN.terms : props.data.LangPL.terms}</a>
-        </li>
+        </li> */}
     </ul>
 
     <nav className={`nav-sub`}>

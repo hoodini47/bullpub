@@ -30,8 +30,8 @@ export const Footer = (props) => {
           © {new Date().getFullYear()} <br />
           {allData.footerTitle} <br />
           {allData.footerSlogan}
-          <PepLogo />
-          <Link to="/terms">{allData.footerLink}</Link>
+          {/* <PepLogo />
+          <Link to="/terms">{allData.footerLink}</Link> */}
           </div>
           </div>
   </footer>

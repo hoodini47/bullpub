@@ -1,58 +1,58 @@
-.menu-section {
-    padding: 50px 0 0 0;
+section#menu {
     background-color: #ededed;
+    padding: 50px 0 0;
 
-    .menu-wrapper {
+    .menu-header {
+        margin: 25px auto 60px auto;
+    }
+
+    .menu-images-container {
         display: flex;
         flex-flow: column;
+    }
+
+    .menu-item-container {
+        display: flex;
         justify-content: center;
+        align-items: center;
+        height: 100%;
 
-        .main-menu {
-            margin: auto;
+        // .pic-up-left {
+        //     width: 50%;
+        //     height: 100%;
+        //     margin: 1em auto;
+        //     display: flex;
+        //     justify-content: center;
+        //     align-items: center;
+        //     padding: 2em;
 
-            .menu-items {
-                color:black;
-                padding: 0.5em;
-                max-width: 800px;
+            .gatsby-image-wrapper {
+                height: 65vh;
+                // width: 100%;
+                // padding: 1em;
+                margin: 2em auto;
+                box-shadow: -1px 0px 15px 0px rgba(0,0,0,0.75);
 
-                .burger {
-                    display: flex;
-                    flex-flow: row nowrap;
-                    justify-content: center;
+                @media screen and (min-width: 1200px) {
+                    height: 150vh;
+                }
 
-                    p {
-                        margin: 0 auto 0 auto;
-                        font-family: "Source Sans Pro",sans-serif;
-                        font-weight: 400;
+                div {
+                    padding-bottom:none!important;
+                }
 
-                        &:first-child {
-                            font-weight: 700;
-                            text-align: center;
-                            padding: 0em 0em 1.5em 0em;
-                            width: 24%;
-                            font-size: 105%;
-                            max-width: 85px;
-                            margin-right: 0em;
-                            text-align: left;
-                        }
+                picture {
+                    // height: 100%;
+                    // order: 0;
+                    img {
+                        width: auto!important;
+                        position: static!important;
+                        margin-bottom: 0em;
 
-                        &:nth-child(2){
-                            font-weight: 400;
-                            padding: 0em 0em 1em 0.2em;
-                            width: 64%;
-                            font-size: 95%;
-                        }
-
-                        
-                        &:nth-child(3){
-                            font-weight: 700;
-                            padding: 0em 0em 0em 0.2em;
-                            width: 12%;
-                            font-size: 100%;
-                        }
                     }
                 }
             }
-        }
+        // }
+
     }
 }

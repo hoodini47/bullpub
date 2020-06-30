@@ -1,8 +1,8 @@
 import React, { useState} from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import Header from "./header"
-import OrderButtonLazy from "./order-button-lazy"
 import SectionWelcome from "./section-welcome"
+import About from "./about"
 import Menu from "./menu"
 import Location from "./location"
 import LeafletMap from "./leaflet-map"
@@ -21,7 +21,7 @@ const Layout = () => {
   const [navScrolled, changeNav] = useState(false)
 
   useScrollPosition(({ currPos }) => {
-    let firstOffsetTop = document.getElementById('menu').offsetTop;
+    let firstOffsetTop = document.getElementById('about').offsetTop;
     let firstOffsetTopFormatted = (-firstOffsetTop+30);
 
     const isScrolled = currPos.y < firstOffsetTopFormatted
@@ -47,9 +47,9 @@ const Layout = () => {
 
       <Header {...commonProps} {...langProps}/>
 
-      <OrderButtonLazy />
-
       <SectionWelcome />
+
+      <About {...commonProps} {...langProps}/>
 
       <Menu {...langProps}/>
 

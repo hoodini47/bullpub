@@ -19,9 +19,9 @@ export default class MyMap extends Component {
   }
 
   static defaultProps = {
-    position: [50.0618307, 19.9406646],
+    position: [50.06169, 19.94068],
     zoom: 30,
-    markerText: "We are here! | BULL BURGER GRILL"
+    markerText: "We are here! | BULL PUB"
   }
   
   render() {
