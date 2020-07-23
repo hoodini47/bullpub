@@ -22,7 +22,7 @@ export const SectionWelcome = () => {
 
  return (
   <section id={`welcome`} className={`first-section`}>
-    <Img fluid={data.datoCmsMainPhoto.mainPhoto.fluid}/>
+    <Img fadeIn fluid={data.datoCmsMainPhoto.mainPhoto.fluid}/>
     <div role="button" tabIndex={0} className={`scroll-icon`} onClick={() => scrollTo('.about-content-container')}>
       <span className={`arrow-container`}><ArrowLogo /></span>
     </div>
