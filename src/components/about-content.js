@@ -17,11 +17,7 @@ query AboutQuery {
           id
           aboutImage {
             fluid(maxHeight: 400, maxWidth: 400) {
-              base64
-              width
-              height
               src
-              srcSet
             }
           }
         }
@@ -40,11 +36,7 @@ query AboutQuery {
           id
           aboutImage {
             fluid(maxHeight: 300, maxWidth: 300) {
-              base64
-              width
-              height
               src
-              srcSet
             }
           }
         }
