@@ -83,7 +83,7 @@ props.langChosen ? allData = data.LangEN : allData = data.LangPL;
                       .map((block, index) => (
                         <div key={index} className={`about-pair-container`}>
 
-                        <Img className='about-slide-picture' fluid={block.aboutContent[0].aboutImage.fluid} />
+                        <Img fadeIn className='about-slide-picture' fluid={block.aboutContent[0].aboutImage.fluid} />
 
                         <Fade bottom delay={100} duration={700}>
                             <div className={`text-up-right`}>

@@ -77,7 +77,7 @@ const MenuItems = (props) => {
   
                           <Fade left delay={100} duration={600}>
                               <div className={`menu-item`}>
-                              <Img fluid={block.menuItems.fluid} />
+                              <Img fadeIn fluid={block.menuItems.fluid} />
                               </div>
                           </Fade>
   
