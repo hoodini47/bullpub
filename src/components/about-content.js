@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../styles/about.scss"
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 
 const AboutContent = (props) => {

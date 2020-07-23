@@ -3,7 +3,7 @@ import React from "react"
 const HamburgerButton = (props) => {
 
   return (
-  <div id="button-nav-mobile" onClick={() => props.setNavState(!props.navActive)}>
+  <div role="button" tabIndex={0} id="button-nav-mobile" onClick={() => props.setNavState(!props.navActive)}>
   <svg className={`ham hamRotate ham8 ${props.navActive ? "active" : ""}`}
     viewBox="0 0 100 100" width="65" >
     <path

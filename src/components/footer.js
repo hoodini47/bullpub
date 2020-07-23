@@ -1,7 +1,6 @@
 import React from "react"
 import "../styles/footer.scss"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import PepLogo from "../images/pep.inline.svg"
+import { useStaticQuery, graphql } from "gatsby"
 
 export const Footer = (props) => {
 
@@ -30,8 +29,6 @@ export const Footer = (props) => {
           © {new Date().getFullYear()} <br />
           {allData.footerTitle} <br />
           {allData.footerSlogan}
-          {/* <PepLogo />
-          <Link to="/terms">{allData.footerLink}</Link> */}
           </div>
           </div>
   </footer>

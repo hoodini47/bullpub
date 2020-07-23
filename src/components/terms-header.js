@@ -16,13 +16,13 @@ const TermsDesktopHeader = (props) => {
     <nav className={`desktop-side-nav terms-nav`}>
       <ul id="nav-side-list" className={`terms-lang`}>
         <li>
-          <a onClick={() => props.setLang(false)} className={`${props.langChosen ? "" : "lang-clicked"}`} >PL</a>
+          <a role="button" tabIndex={0} onClick={() => props.setLang(false)} className={`${props.langChosen ? "" : "lang-clicked"}`} >PL</a>
         </li>
         <li>
           |
         </li>
         <li>
-          <a onClick={() =>  props.setLang(true)} className={`${props.langChosen ? "lang-clicked" : ""}`} >EN</a>
+          <a role="button" tabIndex={0} onClick={() =>  props.setLang(true)} className={`${props.langChosen ? "lang-clicked" : ""}`} >EN</a>
         </li>
       </ul>
     </nav>

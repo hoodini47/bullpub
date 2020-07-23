@@ -33,8 +33,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `BullPub`,
-        short_name: `Bull Pub`,
+        name: `BullPizza`,
+        short_name: `Bull Pizza`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#467b81`,

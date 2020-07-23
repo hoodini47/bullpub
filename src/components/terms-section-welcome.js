@@ -1,20 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 export const TermsSectionWelcome = (props) => {
-
-  const data =  useStaticQuery(graphql`
-  query TermsQuery {
-    file(relativePath: {eq: "main-photo-optimized.jpg"}) {
-      childImageSharp {
-        fluid(quality: 100, maxWidth: 3080) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`)
 
  return (
   <section className={`terms-section`}>
