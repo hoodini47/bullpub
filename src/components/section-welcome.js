@@ -13,10 +13,6 @@ export const SectionWelcome = () => {
       mainPhoto {
         fluid {
           src
-          srcSet
-          height
-          width
-          base64
         }
       }
     }
