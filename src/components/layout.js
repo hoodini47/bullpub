@@ -1,4 +1,6 @@
 import React, { useState} from 'react'
+import { Helmet } from "react-helmet"
+
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 import Header from "./header"
 import SectionWelcome from "./section-welcome"
@@ -44,6 +46,11 @@ const Layout = () => {
 
   return (
     <>
+        <Helmet>
+
+          <title>Bull Pub</title>
+
+        </Helmet>
 
       <Header {...commonProps} {...langProps}/>
 
