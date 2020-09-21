@@ -67,7 +67,6 @@ section#about {
                 margin: auto;
                 padding: 2em;
                 text-align: center;
-                font-weight: 700;
                 @include fluid-type($min_width, $max_width, 12px, 16px);
             }
         }
