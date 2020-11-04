@@ -12,9 +12,6 @@ export const SectionWelcome = () => {
         mainPhoto {
           fluid {
             src
-            srcSet
-            height
-            width
           }
         }
       }
@@ -23,7 +20,7 @@ export const SectionWelcome = () => {
 
   return (
     <section id={`welcome`} className={`first-section`}>
-      <Img fadeIn fluid={data.datoCmsMainPhoto.mainPhoto.fluid} />
+      <Img fluid={data.datoCmsMainPhoto.mainPhoto.fluid} />
       <div
         role="button"
         tabIndex={0}
